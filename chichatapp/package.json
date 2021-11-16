@@ -1,14 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev --port=3002",
+    "dev": "next dev --port=3001",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-responsive-carousel": "^3.2.22",
+    "react-select": "^5.2.1",
+    "react-select-country-list": "^2.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
