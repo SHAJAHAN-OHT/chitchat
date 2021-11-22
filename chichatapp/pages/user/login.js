@@ -23,7 +23,7 @@ function Login() {
         console.log("user data:", logindata)
     }
     return (
-        <div className="lg:grid md:grid-cols-3 grid-cols-1 h-screen w-screen">
+        <div className="lg:grid md:grid-cols-3 grid-cols-1 h-screen w-screen" onLoad={()=>alert("hi jyo")}>
             <div className="md:block  md:h-screen h-auto w-full space-y-7 p-5 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-center">
                 <Image src={add} alt="addnrecord image" width={200} height={200} className="image-gray" />
                 <div className="w-full flex flex-col space-y-7 items-center justify-center">
