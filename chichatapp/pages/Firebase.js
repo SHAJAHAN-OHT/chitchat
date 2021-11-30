@@ -1,5 +1,5 @@
 import {firebase, initializeApp} from "firebase/app";
-
+import {getMessaging} from 'firebase/messaging'
 const firebaseConfig = {
   apiKey: "AIzaSyBKyKhs_uarn3PB9iRyY7xIIWoxhaQW8SY",
   authDomain: "chitchatapp-fa8d1.firebaseapp.com",
@@ -10,6 +10,9 @@ const firebaseConfig = {
   measurementId: "G-7XWDCYDHFV"
 };
 
-initializeApp(firebaseConfig);
+const conf = initializeApp(firebaseConfig);
+
+const messaging = getMessaging(conf);
+
 
 export default firebase;
